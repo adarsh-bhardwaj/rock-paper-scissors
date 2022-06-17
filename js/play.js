@@ -5,7 +5,7 @@ let userScore = 0;
 let computerScore = 0;
 let images={
     "rock": "images/rock.png",
-    "paper": "images/paper.png",
+    "paper": "images/Paper.png",
     "scissor": "images/Scissor.png"
 };
 
