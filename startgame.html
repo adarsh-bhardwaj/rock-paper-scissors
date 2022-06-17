@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/gamepage.css">
+
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <div class="score-counter">
+        <div class="your-score">Your Score: <span data-score="userScore">00</span></div>
+        <div class="computer-score">Computer Score: <span data-score="computerScore">00</span></div>
+    </div> 
+
+    <div class="round">
+        <h2>Round <span data-round="currentRound">00</span> Out of <span data-round="totalRound">10</span></h2>
+    </div>
+    
+    <div class="computer-Img">
+        <img src="./images/rock.png" alt="" id="computer-img">
+    </div>
+    <div class="Round-Winner" id="display-content">
+        <h2 id="round-winner">- -</h2>
+        <p>Press Other Option to continue</p>
+    </div>
+    <div class="select">
+        <h3>Select</h3>
+        <div class="options">
+            <img data-img="rock" src="./images/rock.png" alt="" onclick="optionSelect(this)">    
+            <img data-img="paper" src="./images/Paper.png" alt="" onclick="optionSelect(this)">
+            <img data-img="scissor" src="./images/Scissor.png" alt="" onclick="optionSelect(this)">
+        </div>
+    </div>
+
+    <script src="./js/play.js"></script>
+
+</body>
+</html>

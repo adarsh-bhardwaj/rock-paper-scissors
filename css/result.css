@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+:root{
+    --background-color: #222831;
+    --text-color: #EEEEEE;
+    --heading-color:#00ADB5;
+}
+body{
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.score-counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    font-family: 'Exo', sans-serif;
+    font-weight: 800;
+}
+
+.winner{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.winner h2{
+    text-align: center;
+    color: var(--text-color);
+    font-family: 'Exo', serif;
+    font-size: 5rem;
+}
+.winner h3{
+    text-align: center;
+    color: var(--heading-color);
+    font-family: 'Exo', serif;
+    font-size: 3rem;
+}
+
+.play-btn button{
+    padding: 10px 20px;
+    position: absolute;
+    left: 50%;
+    top:60%;
+    transform: translate(-50%); 
+    width: 200px;
+    border: none;
+    background-color: var(--heading-color,0.5);
+    font-family: 'Exo', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-color);
+    border-radius: 12px;
+}
+
+.play-btn button:hover{
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--heading-color);
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+:root{
+    --background-color: #222831;
+    --text-color: #EEEEEE;
+    --heading-color:#00ADB5;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+h1{
+    color: var(--text-color);
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Exo', sans-serif;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3.2em;
+    flex-wrap: wrap;
+    gap:22px
+}
+.icons img{
+    width: 220px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.Round-selection h2{
+    color: var(--heading-color);
+    font-family: 'Rokkitt', serif;
+    font-size:2.7rem;
+    text-align: center;
+}
+
+.Round-selection select{
+    padding: 10px 20px;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 12px;
+    border: 2px solid black;
+    font-size: 1.2rem;
+}
+
+.play-btn button{
+    padding: 10px 20px;
+    position: absolute;
+    left: 50%;
+    top:75%;
+    transform: translate(-50%); 
+    width: 200px;
+    border: none;
+    background-color: var(--heading-color,0.5);
+    font-family: 'Exo', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-color);
+    border-radius: 12px;
+}
+
+.play-btn button:hover{
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--heading-color);
+}

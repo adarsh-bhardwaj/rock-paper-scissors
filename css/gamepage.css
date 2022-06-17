@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+:root{
+    --background-color: #222831;
+    --text-color: #EEEEEE;
+    --heading-color:#00ADB5;
+}
+body{
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.score-counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    font-family: 'Exo', sans-serif;
+    font-weight: 800;
+}
+
+.round h2 {
+    text-align: center;
+    color: var(--text-color);
+    font-family: 'Rokkitt', serif;
+    font-size: 3rem;
+}
+
+.computer-Img{
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.computer-Img img{
+    width: 220px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.select h3{
+    text-align: center;
+    color: var(--heading-color);
+    font-family: 'Rokkitt', serif;
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+.select .options{
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.options img{
+    width: 200px;
+    height: auto;
+}
+
+.options img:hover{
+    transform: scale(1.3);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.Round-Winner{
+    display: none;
+}
+.Round-Winner h2{
+    text-align: center;
+    color: var(--heading-color);
+    font-family: 'Exo', serif;
+    font-size: 2rem;
+    margin-top: 5px;
+}
+.Round-Winner p{
+    text-align: center;
+    color: var(--text-color);
+    font-family: 'Rokkitt', serif;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
